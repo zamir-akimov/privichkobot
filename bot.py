@@ -49,8 +49,10 @@ async def notify_users():
             await bot.send_message(YOUR_CHAT_ID, evening_text)
         await asyncio.sleep(3600)  # Проверяем раз в час
 
+async def main():
+    asyncio.create_task(update_rituals())
+    asyncio.create_task(notify_users())
+    await dp.start_polling(bot)
+
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    loop.create_task(update_rituals())
-    loop.create_task(notify_users())
-    executor.start_polling(dp, skip_updates=True)
+    asyncio.run(main())
