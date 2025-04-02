@@ -1,7 +1,7 @@
 import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-from aiogram.utils import executor
+import asyncio
 import datetime
 
 TOKEN = "8029649809:AAEmDL6CeuXuBLmCKo8ixNakwGQFdMir-SM"
