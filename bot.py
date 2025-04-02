@@ -4,7 +4,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.utils import executor
 import datetime
 
-TOKEN = "YOUR_BOT_TOKEN_HERE"
+TOKEN = "8029649809:AAEmDL6CeuXuBLmCKo8ixNakwGQFdMir-SM"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
